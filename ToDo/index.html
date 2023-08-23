@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css"> <!-- Added link to external CSS -->
+  <title>To-Do List</title>
+</head>
+<body>
+  <div class="container mt-4">
+    <h2 class="text-center mb-4">My To-Do List</h2>
+    
+    <!-- Add Task Form -->
+    <form action="insert_task.php" method="POST">
+      <div class="form-group">
+        <label for="task">Task Description:</label>
+        <input type="text" class="form-control" id="task" placeholder="Enter a new task" name="task">
+      </div>
+      <div class="form-group">
+        <label for="due_time">Time:</label>
+        <input type="time" class="form-control" id="due_time" name="due_time">
+      </div>
+      <button class="btn btn-primary" type="submit">Add Task</button>
+    </form>
+    
+    <!-- View All Tasks Button -->
+    <a class="btn btn-secondary mt-3" href="view_tasks.php">View All Tasks</a>
+  </div>
+</body>
+</html>
+
+
+
+
+
